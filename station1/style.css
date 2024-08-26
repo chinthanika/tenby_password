@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #7f0000; /* Dark red to symbolize danger */
+    background: linear-gradient(135deg, #7f0000 0%, #ff4e00 100%);
+    color: #ffffff;
+}
+
+#app {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for the app container */
+    padding: 50px 80px;
+    border-radius: 8px;
+}
+
+input, button {
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+}
+
+input {
+    width: calc(100% - 20px); /* Full width taking padding and border into consideration */
+}
+
+button {
+    background-color: #c62828; /* Red color for buttons to fit the disaster theme */
+    color: white;
+    cursor: pointer;
+}
+
+#feedback span {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 2px;
+    border-radius: 2px;
+    font-size: 40px;
+}
+
+.correct {
+    background-color: #43a047; /* Green for correct guesses */
+}
+
+.wrong-position {
+    background-color: #f5bf2d; /* Yellow for misplaced guesses */
+}
+
+.wrong {
+    background-color: #6d4c41; /* Brown as a neutral, earthy color for wrong guesses */
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for the app container */
+    padding: 30px 40px;
+    border-radius: 8px;
+    width: 40%;
+    margin-left: 50px;
+}
+
+textarea{
+	width: 100%;
+	margin: 10px auto;
+	display: block;
+	height: 120px;
+	padding: 10px;
+	box-sizing: border-box;
+	border: none;
+    border-radius: 4px;
+}
+textarea:focus{
+	outline: 2px solid crimson;
+}
+.binaryToDecimal, .unconvert{
+	display: none;
+}
+.decimalToBinaryClose{
+	display: none;
+}
+.binaryToDecimalOpen{
+	display: block;
+}
+.inline-block{
+	display: inline-block;
+}
+.convert, .unconvert{
+	padding: 10px;
+	background: Crimson;
+	color: #fff;
+	border: 1px solid crimson;
+	cursor: pointer;
+	font-family: sans-serif;
+	font-weight: bold;
+	border-radius:3px;
+	float:right;
+}
+.sub{
+	padding:10px;
+	background:#fff;
+	color:#000;
+	border:1px solid crimson;
+	outline:none;
+	border-radius:3px;
+	cursor:pointer;
+	transition:0.4s;
+	-o-transition:0.4s;
+	-moz-transition:0.4s;
+	-webkit-transition:0.4s;
+}
+.sub:hover{
+	background:#f7acba;
+}
+
+.tools{
+	display:block;
+}

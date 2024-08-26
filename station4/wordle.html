@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Number Wordle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h2>Guess the Password</h2>
+        <input type="text" id="userInput" placeholder="Enter a 5-digit number" maxlength="5"/>
+        <button id="submitGuess">Guess</button>
+        <div id="feedback"></div>
+    </div>
+
+    <div class="container">
+        <h2>Binary Code Converter</h2>
+        <div class="tools">
+          <button class="sub toggle">SWITCH</button>
+          <button class="sub clear clear-converted">CLEAR</button>
+          <button class="convert">CONVERT</button>
+          <button class="unconvert">UNCONVERT</button>
+        </div>
+        <div class="decimalToBinary">
+          <textarea autofocus class="decimal" placeholder="Enter your text... e.g. Cat"></textarea>
+          <textarea class="binary disabled" placeholder="Enter your Binary Code ... e.g. 0100100"></textarea>
+        </div>
+        <div class="binaryToDecimal">
+          <textarea class="binary" placeholder="Enter your Binary Code ... e.g. 0100100"></textarea>
+          <textarea class="decimal disabled" placeholder="Enter your text... e.g. Cat"></textarea>
+        </div>
+    </div>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src="script.js"></script>
+</body>
+</html>
