@@ -4,8 +4,9 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: #7f0000; /* Dark red to symbolize danger */
-    background: linear-gradient(135deg, #7f0000 0%, #ff4e00 100%);
+    background-image: url(iris.jpg);
+    /* background: #7f0000; /* Dark red to symbolize danger */
+    /* background: linear-gradient(135deg, #7f0000 0%, #ff4e00 100%); */
     color: #ffffff;
 }
 
@@ -34,7 +35,7 @@ button {
     cursor: pointer;
 }
 
-#feedback span {
+#code span {
     display: inline-block;
     padding: 10px 20px;
     margin: 2px;
