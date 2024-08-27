@@ -1,4 +1,4 @@
-const correctCode = "11111";
+const correctCode = "IMDMF004";
 
 document.getElementById('submitCode').addEventListener('click', function() {
     const userInput = document.getElementById('userInput').value;

@@ -4,8 +4,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: #7f0000; /* Dark red to symbolize danger */
-    background: linear-gradient(135deg, #7f0000 0%, #ff4e00 100%);
+    background-image: url(iris.jpg);
     color: #ffffff;
 }
 
@@ -34,24 +33,11 @@ button {
     cursor: pointer;
 }
 
-#feedback span {
+#code span {
     display: inline-block;
     padding: 10px 20px;
     margin: 2px;
     border-radius: 2px;
-    font-size: 40px;
-}
-
-.correct {
-    background-color: #43a047; /* Green for correct guesses */
-}
-
-.wrong-position {
-    background-color: #f5bf2d; /* Yellow for misplaced guesses */
-}
-
-.wrong {
-    background-color: #6d4c41; /* Brown as a neutral, earthy color for wrong guesses */
 }
 
 .container {
@@ -72,21 +58,27 @@ textarea{
 	border: none;
     border-radius: 4px;
 }
+
 textarea:focus{
 	outline: 2px solid crimson;
 }
+
 .binaryToDecimal, .unconvert{
 	display: none;
 }
+
 .decimalToBinaryClose{
 	display: none;
 }
+
 .binaryToDecimalOpen{
 	display: block;
 }
+
 .inline-block{
 	display: inline-block;
 }
+
 .convert, .unconvert{
 	padding: 10px;
 	background: Crimson;
@@ -98,6 +90,7 @@ textarea:focus{
 	border-radius:3px;
 	float:right;
 }
+
 .sub{
 	padding:10px;
 	background:#fff;
@@ -111,10 +104,28 @@ textarea:focus{
 	-moz-transition:0.4s;
 	-webkit-transition:0.4s;
 }
+
 .sub:hover{
 	background:#f7acba;
 }
 
 .tools{
 	display:block;
+}
+
+/* Added CSS for #puzzle */
+#puzzle {
+    display: none; /* Initially hidden */
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for the puzzle container */
+    padding: 50px 80px;
+    border-radius: 8px;
+}
+
+#finalMessage {
+    display: none;
+    font-size: 40px;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background for the puzzle container */
+    padding: 50px 80px;
+    border-radius: 8px;
 }

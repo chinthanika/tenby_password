@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Number Wordle</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div id="app">
-        <h2>Guess the Password</h2>
-        <input type="text" id="userInput" placeholder="Enter a 5-digit number" maxlength="5"/>
-        <button id="submitGuess">Guess</button>
-        <div id="feedback"></div>
-    </div>
 
-    <div class="container">
+<head>
+  <meta charset="UTF-8">
+  <title>Number Wordle</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="app">
+    <h2>Passcode to Escape</h2>
+    <input type="text" id="userInput" placeholder="PASSCODE" />
+    <button id="submitCode">ENTER</button>
+    <div id="code"></div>
+  </div>
+    <div id="puzzle">
+      <p>Congratulations! You have successfully unlocked Detective Iris’s laptop!</p>
+      <p>Now, use the grid in your clue sheet to solve the puzzle and find out the location of the murder case:</p>
+      <p>(1,H), (9,G), (1,H), (5,D)</p>
+      <label for="answer">Answer: </label>
+      <input type="text" id="answer" placeholder="Enter your answer" />
+      <button id="submitAnswer">SUBMIT</button>
+      <div id="finalMessage"></div>
+    </div>
+  
+
+  <!-- <div class="container">
         <h2>Binary Code Converter</h2>
         <div class="tools">
           <button class="sub toggle">SWITCH</button>
@@ -29,9 +41,11 @@
           <textarea class="binary" placeholder="Enter your Binary Code ... e.g. 0100100"></textarea>
           <textarea class="decimal disabled" placeholder="Enter your text... e.g. Cat"></textarea>
         </div>
-    </div>
+    </div> -->
 
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-    <script src="script.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
