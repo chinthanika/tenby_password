@@ -1,5 +1,5 @@
 const correctCode = "EROM";
-const correctAnswer = "correct";
+const correctAnswer = "room";
 
 document.getElementById('submitCode').addEventListener('click', function () {
     const userInput = document.getElementById('userInput').value;
@@ -27,7 +27,7 @@ function checkCode(userCode) {
 
 document.getElementById('submitAnswer').addEventListener('click', function () {
     const userAnswer = document.getElementById('answer').value;
-    checkAnswer(userAnswer);
+    checkAnswer(userAnswer.toLowerCase());
 });
 
 function checkAnswer(userAnswer) {
